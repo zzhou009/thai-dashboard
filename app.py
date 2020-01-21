@@ -26,7 +26,9 @@ def datelist(beginDate, endDate):
     return date_l
 
 
-daily_data = pd.read_csv("https://raw.githubusercontent.com/zzhou009/thai-dashboard/master/daily_NEW_20200121.csv",index_col=0, skipinitialspace=True)
+daily_data = pd.read_csv("https://raw.githubusercontent.com/zzhou009/thai-dashboard/master/daily_NEW_20200121.csv",index_col=0, skipinitialspace=True,parse_dates=True)
+
+
 
 pd.options.mode.chained_assignment = None  # default='warn'
 
