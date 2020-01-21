@@ -26,7 +26,7 @@ def datelist(beginDate, endDate):
     return date_l
 
 
-daily_data = pd.read_excel(r'''C:\Users\zhouzh\OneDrive - Louis Dreyfus Company\thai remelt\new from Srinath\Thai crush+production daily_NEW_20191220.xlsx''', 'daily',index_col=0, skipinitialspace=True)
+daily_data = pd.read_csv("https://raw.githubusercontent.com/zzhou009/thai-dashboard/master/daily_NEW_20200121.csv?token=AMCDFYEY24OUEIJXKWD5WRC6E2HGA&_sm_au_=iVVF7vrZTHJnvk40pFW0jKQL3FMFC",index_col=0, skipinitialspace=True)
 
 
 pd.options.mode.chained_assignment = None  # default='warn'
